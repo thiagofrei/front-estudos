@@ -1,0 +1,175 @@
+<!DOCTYPE html> <!--essa linha diz ao navegador que a versão é HTML5 -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Início</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
+</head>
+<body>
+	<h1>Título H1</h1>
+	<h3>Subtítulo H3</h3>
+
+	<p>primeiro texto com a tag p de parágrafo</p>
+	<p>segundo texto com a tag p de parágrafo</p>
+	<p id="tres">terceiro texto com a tag p de parágrafo, porém foi aplicado um novo estilo a partir de um id na tag. no CSS usa-se # para id. id nao se repete.</p>
+	<p class="quatro">quarto texto com a tag p de parágrafo, porém foi aplicado um novo estilo a partir de uma class na tag. no CSS usa-se ponto (.) para class. class se repete</p>
+
+	<img id="mario" class="img" src="../images/mario.png" alt="mario.png" width="120" height="200">
+
+	<h5>Lista sem ordem</h5>
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ul>
+
+	<h5>Lista com ordem</h5>
+	<ol>
+		<li>ordem 1</li>
+		<li>ordem 2</li>
+		<li>ordem 3</li>
+	</ol>
+
+	<h5>Tabela</h5>
+	<table>
+		<thead>
+			<tr> <!-- linha 1 -->
+				<td>coluna 1</td>
+				<td>coluna 2</td>
+				<td>coluna 3</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><!-- linha 2 -->
+				<td>dados</td>
+				<td>infos</td>
+				<td>exp</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="DivPost">
+		<h3>Área de DIV</h3>
+			
+		Aqui é uma área de DIV criada para testar o uso das divs. DIV é uma área de bloco usada para separar os conteúdos de um site.
+	</div>
+
+	<div class="SpanPost">
+		<h3>Área de SPAN</h3>
+
+		A tag <-span-> é parecida com a div, porém é mais usada para destacar algo visualmente, parecido um marca-texto. 
+		<span class="marca-texto"> Aqui nessa frase foi aplicada a tag span </span>.
+	</div>
+
+	<div class="formatacao">
+		<h3>Formatação de Texto</h3>
+
+		aqui vão algumas tags de formatação de texto.
+		
+		a tag <b>b</b> deixa em negrito. porém a tag nao tem importância para o google.
+		a tag <strong>strong</strong> também deixa em negrito, mas tem importância para o google, tem significado.
+
+		a tag <i>i deixa em itálico</i>, mas o google prefere a tag <em>em, tem semântica</em>.
+
+		a tag <mark>mark</mark> marca algo.
+
+		a tag <small>small</small> diminui o texto.
+
+		a tag <del>del</del> faz um risco.
+
+		a tag <ins>ins</ins> sublinha o texto.
+
+		a tag <sub>sub</sub> coloca a palavra um pouco abaixo do alinhamento, que pode ser usado para citação.
+
+		a tag <sup>sup</sup> coloca a palavra um puco acima  do alinhamento, pode ser usado para exponenciação.
+	</div>
+
+	<br>Sobre links: <br>
+	Aqui vai um exemplo de link: 
+	<a href="http://google.com.br">acessar o google</a>
+	<br>Agora a ancoragem é diferente. Ela cria um vinculo com o objeto que vc quer. quer ver? 
+	<a href="#mario"> clique aqui </a> para ir até a imagem do mario que está lá em cima. <br><br>
+
+	<div id="iframe">
+		<h3>Exemplo de iframe</h3>
+		No iframe é possível carregar um outro site. pode ser usado para vídeos também.<br>
+		<iframe src="http://umsitequalquer.com">
+		</iframe>
+	</div>
+
+	<div id="form">
+		<h3>Formulário</h3>
+
+		<!-- o nome do imput dev ser igual ao do backend para fazer a ligacao-->
+		<form action="http://localhost/forms/actionGet.php">
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+				Nome: <input type="text" name="nome"><br>
+				Sobrenome: <input type="text" name="sobrenome"><br>
+				Senha: <input type="password" name="senha"><br>
+				E-mail <input type="text" name="email" placeholder="digite seu email"><br><br>
+
+				<input type="radio" name="genero" value="M">Masculino
+				<input type="radio" name="genero" value="F">Feminino
+				<input type="radio" name="genero" value="N" checked>Não Informado <br>
+			</fieldset><br>
+
+			<input type="checkbox" name="opcao1">Música<br>
+			<input type="checkbox" name="opcao2">Tecnologia<br>
+			<input type="checkbox" name="opcao3">Culinária<br>
+			<input type="checkbox" name="opcao4">Política<br><br>
+
+			Aqui é um select:<br>
+			<select name="interesse">
+				<option value="musica">Música</option>
+				<option value="musica" selected>Tecnologia</option>
+				<option value="musica">Culinária</option>
+				<option value="musica">Política</option>
+			</select><br><br>
+
+			Aqui é um DataList, recurso do HTML5. Permite procurar na lista digitando o inicio da palavra<br>
+			<input name="interesse2" list="int">
+			<datalist id="int">
+				<option value="Música">
+				<option value="Tecnologia">
+				<option value="Culinária">
+				<option value="Política">
+			</datalist><br><br>
+
+			Digite sua observação:<br>
+			<textarea name="areaDeTexto" rows="10" cols="50"></textarea><br><br>
+
+			Aqui são exibidos alguns inputs novos do HTML5:<br>
+			Input Color:<br>
+			<input type="color" name="cores"><br><br>
+			Input Date:<br>
+			<input type="Date" name="calendario"><br><br>
+			Input DateTime-local:<br>
+			<input type="DateTime-local" name="calendario-hora"><br><br>
+			Input Email:<br>
+			<input type="email" name="email"><br><br>
+			Input Month:<br>
+			<input type="Month" name="mes"><br><br>
+			Input Number:<br>
+			<input type="Number" name="numero" min="0" max="15"><br><br>
+			Input Search:<br>
+			<input type="Search" name="busca"><br><br>
+
+			<br><input type="submit" name="enviar" value="Enviar">
+			<input type="reset" name="limpar" value="Limpar">
+		</form>
+	</div>
+
+	<div id="buscador">
+		<h3>Nosso buscador Google</h3>
+		<form action="http://www.google.com.br/search">
+			<input type="text" name="q">
+			<input type="submit" name="busca" value="Buscar">
+		</form>
+	</div>
+
+	<br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
